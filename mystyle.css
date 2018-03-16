@@ -1,0 +1,263 @@
+body{
+  background-color:white;
+  font-family: helvetica;
+  color:white;
+  margin:0;
+}
+
+.box{
+  width: 100%;
+  height:60vw;
+  margin: 0;
+  padding: 0;
+  display:block;
+  overflow: hidden;
+  background-color:#7CE8D5;
+  position: absolute;
+  cursor: none;
+}
+
+h1{
+  font-size: 7em;
+  margin-top:25%;
+  text-align: center;
+  cursor: none;
+}
+
+/*eye ball*/
+
+.move-area{
+  width: 100%;
+  height: 60vw;
+  position: absolute;
+  margin-top:60vw;
+}
+
+.container {
+  width: 100%;
+}
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  background: white;
+  margin-top:5vw;
+}
+
+#righteye{
+  margin-left:15px;
+}
+
+.eye:after {
+  position: absolute;
+  bottom: 57px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
+}
+
+/*monster*/
+.cont{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  height: 500px;
+  width: 300px;
+  margin-top:300px;
+}
+
+.monster {
+  left: 0;
+  bottom: 50px;
+  right: 0;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #115D8C;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.leg{
+  height:120px;
+  width:30px;
+  margin-top:-5px;
+  margin-left:-70px;
+  background-color: #115D8C;
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+}
+
+#leftleg{
+  margin-left:40px;
+}
+
+
+.foot{
+  width: 80px;
+  height: 40px;
+  background-color: gold;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 167px;
+  margin-top:90px;
+  position: absolute;
+  overflow: hidden;
+}
+
+#rightfoot{
+  margin-left:54px;
+}
+
+.lace{
+  width: 15px;
+  height: 30px;
+  background-color: white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 32px;
+  margin-top: -5px;
+}
+
+.teeth {
+  width: 30px;
+  height: 40px;
+  background-color: white;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 170px;
+  margin-top:20px;
+  position: absolute;
+}
+
+#left{
+  margin-left: 100px;
+}
+
+.mouth{
+  width: 150px;
+  height: 10px;
+  background-color: #F2515E;
+  margin-top: 50px;
+  margin-left: 73px;
+  position: absolute;
+}
+
+/*click*/
+
+#thing {
+	position: relative;
+  width:40px;
+  height:40px;
+	left: 50px;
+	top: 50px;
+	transition: left .5s cubic-bezier(.42,-0.3,.78,1.25),
+			top .5s cubic-bezier(.42,-0.3,.78,1.25);
+}
+
+.scont{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+.smonster {
+  left: 0;
+  bottom: 50px;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #115D8C;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.seye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  margin-left: 1px;
+  background: white;
+  margin-top:9px;
+}
+
+#srighteye{
+  margin-left: 2px;
+}
+
+.pupil {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  margin-left: 1px;
+  background: black;
+  margin-top:-15px;
+  margin-left: -14px;
+}
+
+#spupil{
+  margin-left: 9px;
+}
+
+.steeth {
+  width: 6px;
+  height: 8px;
+  background-color: white;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 17px;
+  position: absolute;
+}
+
+#sleft{
+  margin-left: 28px;;
+}
+
+.smouth{
+  width: 30px;
+  height: 3px;
+  background-color: #F2515E;
+  position: absolute;
+  margin-top:8px;
+  margin-left:10px;
+}
